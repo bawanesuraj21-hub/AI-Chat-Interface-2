@@ -1,0 +1,85 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+	<meta charset="UTF-8">  
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+	<title>AI Chat Interface - Real Outer Shadow Glow</title>  
+    <link rel="stylesheet" href="style.css">  
+</head>  
+<body>  
+    <button id="menuBtn" class="menu-btn">☰</button>
+
+	<!-- Sidebar -->
+	<aside class="sidebar" id="sidebar">
+		<h1>Sura<a>.ai</a></h1>
+		<button id="newChatBtn">+ New Chat</button>
+		<button id="libBtn">Library</button>
+		<button id="themeBtn">🌙 Theme</button>
+		<button id="setting">Settings</button>
+		<button id="logout">Log Out</button>
+		<div id="chatHistory"></div>
+		<button id="clearHistoryBtn">🗑 Clear History</button>
+	</aside>
+
+	<!-- ========================= -->
+	<!-- Premium Top Navbar -->
+	<!-- ========================= -->
+
+	<nav class="top-navbar" id="topNavbar">
+
+		<div class="nav-logo">
+			<div class="logo-circle">🤖</div>
+			<h2>Sura<span>.ai</span></h2>
+		</div>
+
+		<ul class="nav-links">
+			<li class="active"><a href="#"><span>Home</span></a></li>
+			<li><a href="#"><span>AI Tools</span></a></li>
+			<li><a href="#"><span>Models</span></a></li>
+			<li><a href="#"><span>Workspace</span></a></li>
+		</ul>
+
+		<div class="nav-actions">
+			<button class="nav-icon" id="searchIcon">🔍</button>
+			<button class="nav-icon" id="themeIcon">🌙</button>
+			<button class="profile-btn">S</button>
+		</div>
+
+	</nav>
+
+	<div class="container" id="mainContainer">
+
+		<p class="subtitle">Build your ideas with Sura<a>.ai</a></p>
+
+		<div class="chat-wrapper" id="chatWrapper">
+			<div class="chat-bar">
+				<div class="input-area">
+					<textarea placeholder="Describe your idea and let Sura.ai turn it into reality . . ." id="prompt"></textarea>
+					<div class="bottom">
+						<div class="left">
+							<button class="btn" id="uploadBtn">+</button>
+							<div class="dropdown">
+								<button class="dropdown-btn">
+									<span id="selectedText">Normal</span>
+								</button>
+								<div class="dropdown-menu">
+									<div class="selected">Normal</div>
+									<div>Deep Thinking</div>
+								</div>
+							</div>
+						</div>
+						<div class="right">
+							<button class="btn voice-btn" id="voiceBtn">🎤</button>
+							<button class="send-btn" id="sendBtn">➜</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+<script src="script.js"></script>
+</body>  
+</html>
